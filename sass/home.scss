@@ -1,0 +1,58 @@
+//custom colors;
+$background-clr: #FDF7ED;
+$shadow: #C6B9A8;
+$primary: #342103;
+$secondary: #816538;
+
+
+
+
+.body{
+  // color: $primary;
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+header{
+  background-color: $shadow;  
+  padding: 50px;
+  border-radius: 25px;
+  
+}
+
+
+.form{
+  background-color: $shadow;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+
+
+
+
+// For the footer input button of the news letters
+/* Target the input element with its ID */
+#newsletter1 {
+  color: $background-clr;  
+}
+
+#newsletter1:focus {
+  color: $background-clr;  
+}
+
+#newsletter1::placeholder{
+  color: $background-clr;
+}
+
+
+//google fonts
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+//import bootstrap file
+@import '../node_modules/bootstrap/scss/bootstrap.scss'
+
+
+

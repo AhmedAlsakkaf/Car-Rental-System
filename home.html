@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="css/home.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+
+<body class="body">
+
+
+
+  <!-- Header  -->
+  <div class="container">
+    <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bg-shadow">
+
+      <div class="col-md-3 mb-2 mb-md-0">
+        <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+          <img src="images/logo.png" width="100" alt="Logo" aria-label="Bootstrap">
+        </a>
+      </div>
+      
+
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fw-bold">
+        <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
+        <li><a href="#" class="nav-link px-2">About</a></li>
+        <li><a href="#" class="nav-link px-2">Vehicle Model</a></li>
+        <li><a href="#" class="nav-link px-2">Our team</a></li>
+        <li><a href="#" class="nav-link px-2">Contact</a></li>
+      </ul>
+
+      <div class="col-md-3 text-end">
+        <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='html/login.html'">Login</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='html/signup.html'">Sign up</button>
+      </div>
+    </header>
+  </div>
+
+
+
+  <!-- Hero SEction -->
+
+  
+  <div class="container px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+      <div class="col-10 col-sm-8 col-lg-6">
+        <img src="images/hero.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+      </div>
+      <div class="col-lg-6">
+
+        <h1 class="display-5 fw-bold text-primary lh-1 mb-3">Save big with our car rental</h1>
+        <br>
+        <p class="link-secondary">Plan your trip now. Rent the car of your dreams. Unbeatable prices, unlimited miles, flexible pick-up options and much more.</p>
+        <br>
+        <br>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Learn More</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4" onclick="location.href='../html/login.html'">Sign in</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Reservation Section -->
+  <div class="container form mt-5">
+    <form action="">
+      <h1 class="fw-bold text-primary mb-4">Book a Car</h1>
+      <div class="row mb-3">
+        <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
+          <h5 class="d-flex align-items-center text-primary"><i class="fas fa-car text-primary me-2"></i>Select Your Car Type</h5>
+          <select name="cars" id="cars" class="form-select">
+            <option value="suzuki">Suzuki</option>
+            <option value="honda">Honda</option>
+            <option value="toyota">Toyota</option>
+            <option value="kia">Kia</option>
+            <option value="hyundai">Hyundai</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
+          <h5 class="d-flex align-items-center text-primary"><i class="fas fa-calendar-alt text-primary me-2"></i>Drop off date</h5>
+          <input type="date" id="drop-off" name="drop-off" class="form-control">
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <h5 class="d-flex align-items-center text-primary"><i class="fas fa-calendar-alt text-primary me-2"></i>Pick up date</h5>
+          <input type="date" id="pick-up" name="pick-up" class="form-control">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
+          <h5 class="d-flex align-items-center text-primary"><i class="fas fa-map-marker-alt text-primary me-2"></i>Pick up location</h5>
+          <select name="pick-up-location" id="pick-up-location" class="form-select">
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="peshawar">Peshawar</option>
+            <option value="quetta">Quetta</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
+          <h5 class="d-flex align-items-center text-primary"><i class="fas fa-map-marker-alt text-primary me-2"></i>Drop off location</h5>
+          <select name="drop-off-location" id="drop-off-location" class="form-select">
+            <option value="karachi">Karachi</option>
+            <option value="lahore">Lahore</option>
+            <option value="islamabad">Islamabad</option>
+            <option value="peshawar">Peshawar</option>
+            <option value="quetta">Quetta</option>
+          </select>
+        </div>
+        <div class="col-lg-4 col-sm-12 d-flex align-items-end">
+          <button type="submit" class="btn btn-primary w-100">Search</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+
+
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+  <!-- plan your trep section -->
+
+  <div class="container text-center mt-5 mb-5">
+    <h4 class="text-center text-primary fw-bold">Plan Your Trip now</h4>
+    <h1 class="text-center fw-bold text-primary mb-5">Quick & easy car rental</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="row g-3"> <!-- g-3 class will add some gutter (space) between columns -->
+
+
+      <div class="col-12 col-md-4">
+        <div class="card h-100">
+          <img src="images/image copy 2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h1 class="fw-bold text-primary">Select a Car</h1>
+            <p class="card-text text-secondary">We offer a big range of vehicles for all your driving needs. We have the perfect car to meet your needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card h-100">
+          <img src="images/guy2.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h1 class="fw-bold text-primary">Contact Operator</h1>
+            <p class="card-text text-secondary">Our knowledgeable and friendly operators are always ready to help with any questions or concerns.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-4">
+        <div class="card h-100">
+          <img src="images/image copy 4.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h1 class="fw-bold text-primary">Let's Drive</h1>
+            <p class="card-text text-secondary">Whether you're hitting the open road, we've got you covered with our wide range of cars</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+  <!-- Why Choose Us section -->
+
+  <div class="container text-center mt-5">
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text fw-bold text-primary">Why Choose us</p>
+        <h1 class="card-title fw-bold text-primary">Best valued deals you <br> will ever find</h1>
+      </div>
+      <img src="images/cars.png" class="card-img-bottom" alt="...">
+      <br>
+      <br>
+      <p class="text-center text-primary fw-bold container-sm">Discover the best deals you'll ever find with our unbeatable offers. We're dedicated to providing you with the best value for your money, so you can enjoy top-quality services and products without breaking the bank. Our deals are designed to give you the ultimate renting experience, so don't miss out on your chance to save big.</p>
+
+    </div>
+
+  </div>
+
+
+  <br>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+
+
+
+
+
+
+
+  
+<div class="container">
+  <footer class="py-5">
+    <div class="row">
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Car Rental</h5>
+        <ul class="nav flex-column">
+          <p class="text-secondary">We offers a big range of vehicles for all your driving needs. We have the perfect car to meet your needs</p>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">03440580996</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Godrive@gmail.com</a></li>
+        </ul>
+      </div>
+
+      <br>
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Company</h5>
+        <br>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Islamabad</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Career</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Mobile</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Blog</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">About</a></li>
+        </ul>
+      </div>
+
+      <div class="col-6 col-md-2 mb-3">
+        <h5 class="fw-bold text-primary">Working Hours</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Mon - Fri: 9:00AM - 9:00PM</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Sat: 9:00AM - 19:00PM</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-secondary">Sun: Closed</a></li>
+
+        </ul>
+      </div>
+
+      <div class="col-md-5 offset-md-1 mb-3">
+        <form>
+          <h5 class="fw-bold text-primary">Subscribe to our Newsletter</h5>
+          <p class="text-secondary">Subscribe your Email address for latest news & updates.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <input id="newsletter1" type="text" class="form-control bg-secondary" placeholder="Email address">
+            <button class="btn btn-primary" type="button">Subscribe</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+      <p class="text-center text-primary">&copy; 2024 Company, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+
+  
+</body>
+
+
+</html>
