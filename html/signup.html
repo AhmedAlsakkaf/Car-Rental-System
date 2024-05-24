@@ -11,6 +11,9 @@
   <script type="module" src="../js/signUp.js"></script>
   <link rel="stylesheet" href="../sass/login.scss">
 
+  <!-- for the menu responsivness -->
+  <link rel="stylesheet" href="../css/small-menu.css">
+
 
 
 </head>
@@ -30,6 +33,14 @@
           <img src="../images/logo.png" width="100" alt="Logo" aria-label="Bootstrap">
         </a>
       </div>
+
+
+      <!-- Nav Icon for Mobile View -->
+      <div class="nav-icon d-md-none">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fw-bold">
@@ -41,10 +52,12 @@
       </ul>
 
       
-      <div class="col-md-3 text-end">
+      <div class="col-md-3 text-end small-menu">
         <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='../home.html'">Home</button>
-        <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Log in</button>
+        <button type="button" class="btn btn-primary" onclick="location.href='../html/login.html'">Login</button>
       </div>
+
+
     </header>
   </div>
 
@@ -174,6 +187,7 @@
 
 
 
+  <script src="../js/home.js"></script>
   <script src="../js/validation.js"></script>
 
 </body>
