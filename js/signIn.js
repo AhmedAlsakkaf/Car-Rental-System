@@ -1,12 +1,6 @@
 // Import the functions you need from the SDKs you need
-// alert('something');
-
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-app.js";
-import { getAuth, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js";
-
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.12.1/firebase-auth.js";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -22,41 +16,45 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
+document.getElementById('signinForm').addEventListener('submit', function(event) {
+  event.preventDefault();
 
+  // Clear previous errors
+  document.getElementById('signinEmailError').textContent = '';
+  document.getElementById('signinPasswordError').textContent = '';
 
+  // Get form values
+  const email = document.getElementById('signinEmail').value.trim();
+  const password = document.getElementById('signinPassword').value.trim();
 
+  let valid = true;
 
+  // Validate email
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    document.getElementById('signinEmailError').textContent = 'Please enter a valid email address.';
+    valid = false;
+  }
 
+  // Validate password
+  if (password.length < 3 || password.length > 10) {
+    document.getElementById('signinPasswordError').textContent = 'Password must be between 3 and 10 characters.';
+    valid = false;
+  }
 
-// For the Sign In button
-
-
-const submit2 = document.getElementById('singinSubmit');
-submit2.addEventListener("click", function(event){
-  event.preventDefault()
-
-
-    
-  //inputs
-  const email = document.getElementById('signinEmail').value;
-  const password = document.getElementById('signinPassword').value;
-
-  signInWithEmailAndPassword(auth, email, password)
-    .then((userCredential) => {
-      // Signed up 
-      const user = userCredential.user;
-      alert('Logged in successfully..')
-      window.location.href = "../html/temp.html"; //You will specifiy where the user will be signed in
-
-
-      // ...
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      alert(errorMessage)
-      // ..
-    });
-
-
+  // Proceed with Firebase authentication if valid
+  if (valid) {
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        // Signed in
+        const user = userCredential.user;
+        alert('Logged in successfully.');
+        window.location.href = "../html/temp.html"; // Specify where the user will be redirected after sign-in
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const errorMessage = error.message;
+        alert(errorMessage);
+      });
+  }
 });

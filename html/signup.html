@@ -9,9 +9,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <script type="module" src="../js/signUp.js"></script>
+  <link rel="stylesheet" href="../sass/login.scss">
+
 
 
 </head>
+
 
 
 <body class="body">
@@ -51,27 +54,31 @@
   <br>
   <br>
   <br>
-
+  
   <div class="container">
     <main class="form-signup w-100 m-auto" style="max-width: 400px;">
-      <form>
+      <form id="signupForm">
         <h1 class="h3 mb-3 fw-bold text-center text-primary">Please sign up</h1>
   
         <div class="form-floating mb-3">
           <input type="text" class="form-control border border-primary" id="signupName" placeholder="Full Name">
-          <label for="floatingName">Full Name</label>
+          <label for="signupName">Full Name</label>
+          <div id="signupNameError" class="error"></div>
         </div>
         <div class="form-floating mb-3">
           <input type="email" class="form-control border border-primary" id="signupEmail" placeholder="name@example.com">
-          <label for="floatingEmail">Email address</label>
+          <label for="signupEmail">Email address</label>
+          <div id="signupEmailError" class="error"></div>
         </div>
         <div class="form-floating mb-3">
           <input type="password" class="form-control border border-primary" id="signupPassword" placeholder="Password">
-          <label for="floatingPassword">Password</label>
+          <label for="signupPassword">Password</label>
+          <div id="signupPasswordError" class="error"></div>
         </div>
         <div class="form-floating mb-3">
           <input type="tel" class="form-control border border-primary" id="signupPhone" placeholder="Phone Number">
-          <label for="floatingPhone">Phone Number</label>
+          <label for="signupPhone">Phone Number</label>
+          <div id="signupPhoneError" class="error"></div>
         </div>
   
         <div class="form-check text-start my-3">
@@ -79,8 +86,9 @@
           <label class="form-check-label" for="termsCheck">
             I agree to the terms and conditions
           </label>
+          <div id="termsCheckError" class="error"></div>
         </div>
-        <button class="btn btn-primary w-100 py-2" type="submit" id="singupSubmit">Sign up</button>
+        <button class="btn btn-primary w-100 py-2" type="submit" id="signupSubmit">Sign up</button>
         <p class="mt-5 mb-3 text-secondary text-center">&copy; GoDrive 2024</p>
       </form>
     </main>
@@ -166,6 +174,7 @@
 
 
 
+  <script src="../js/validation.js"></script>
 
 </body>
 
