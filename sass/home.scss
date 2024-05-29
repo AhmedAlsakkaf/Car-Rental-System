@@ -22,7 +22,12 @@ header{
   background-color: $shadow;  
   padding: 50px;
   // border-radius: 10px;
-  
+  opacity: .8;
+}
+
+.opa-clr{
+  background-color: $shadow;
+  opacity: .9;
 }
 
 
@@ -125,9 +130,33 @@ header{
 
 
 
+.custom-container2{
+  background-image: url('../images/bread.png');
+  background-size: cover; /* Make sure the image covers the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.reserve{
+  padding: 200px;
+}
+
+
 
 
    
+@media (max-width: 576px) {
+  .custom-container2 .reserve h1 {
+      display: flex;
+      font-weight: bolder;
+
+  }
+  .custom-container2 .reserve p {
+      display: none;
+  }
+}
+   
+
 
 
 //google fonts
