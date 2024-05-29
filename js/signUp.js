@@ -73,7 +73,7 @@ document.getElementById('signupForm').addEventListener('submit', function(event)
         // Signed up 
         const user = userCredential.user;
         alert('Account Created successfully.');
-        window.location.href = "../html/temp.html"; // Specify where the user will be signed in
+        window.location.href = "../html/checkout.html"; // Specify where the user will be signed in
       })
       .catch((error) => {
         const errorCode = error.code;

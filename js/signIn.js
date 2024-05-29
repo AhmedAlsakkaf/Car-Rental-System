@@ -49,7 +49,7 @@ document.getElementById('signinForm').addEventListener('submit', function(event)
         // Signed in
         const user = userCredential.user;
         alert('Logged in successfully.');
-        window.location.href = "../html/temp.html"; // Specify where the user will be redirected after sign-in
+        window.location.href = "../html/checkout.html"; // Specify where the user will be redirected after sign-in
       })
       .catch((error) => {
         const errorCode = error.code;
