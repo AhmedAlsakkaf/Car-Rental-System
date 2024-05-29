@@ -27,6 +27,9 @@
 
   <!-- <link rel="stylesheet" href="../about.css"> -->
 
+  <style>
+
+  </style>
 
 </head>
 
@@ -92,7 +95,7 @@
         </a>
       </li>
       <li class="breadcrumb-item">
-        <a class="fw-bold text-decoration-none text-white" href="about.html">About</a>
+        <a class="fw-bold text-decoration-none text-white" href="contact.html">Contact us</a>
       </li>
     </ol>
   </nav>
@@ -107,28 +110,104 @@
 <br>
 <br>
 <br>
-<!-- HeroSection -->
 
-<div class="container col-xxl-8 px-4 py-5">
-  <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-    <div class="col-10 col-sm-8 col-lg-6">
-      <img src="../images/about.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-    </div>
-    <div class="col-lg-6">
-      <p class="text-primary fw-bold">About the company</p>
-      <br>
-      <h1 class="display-5 fw-bold text-primary lh-1 mb-3">You start the engine and your adventure begins</h1>
-      <br>
-      <p class="text-secondary">We offer flexible rental plans and competitive pricing for car purchases. Tailor your rental duration to fit your schedule, or take advantage of our great deals on car ownership</p>
+<!-- MainSection -->
+
+<main>
+  
+  <div class="custom-container2">
+      <div class="opa-clr p-5">
+      <p class="text-center fw-normal text-white opacity-75">Reach us</p>
+      <h1 class="text-center text-white fw-bold opacity-75">Contact us</h1>
+      </div>
+
+  </div>
+
+
+  <div class="container py-4">
+
+    <br>
+    <br>
+    <br>
+
+    <div class="row mt-4">
+      <div class="col-md-6 text-primary fw-bold">
         <br>
-        <br>
-      <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <button type="button" class="btn btn-primary" onclick="location.href='../html/cars.html'">Learn More</button>
+        
+        <div class="container py-4">
+          <form id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+              <div id="nameError" class="error-message">Name must be at least 3 characters long.</div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              <div id="emailError" class="error-message">Please enter a valid email address.</div>
+            </div>
+            <br>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your message" required></textarea>
+              <div id="messageError" class="error-message">Message cannot be empty.</div>
+            </div>
+            <br>
+            <button type="submit" class="btn btn-primary mt-3 w-100">Send Message</button>
+          </form>
+        </div>
+      
 
       </div>
+
+      <div class="col-md-6">
+        <div class="p-5 bg-body-tertiary rounded-3">
+          <h2 class="text-center text-primary fw-bold">Find Us Here</h2>
+          <br>
+          <br>
+          <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3320.993933619427!2d73.15434607573926!3d33.6573190733082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dfeb104a188d9d%3A0x719284290cc3d2c2!2sHostel%20City!5e0!3m2!1sen!2s!4v1717020981799!5m2!1sen!2s" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>          </div>
+        </div>
+      </div>
     </div>
+    <br>
+    <br>
+    <br>
+
+    <hr class="fw-bold text-primary">
+
+
+    <div class="contact-info text-center mt-4 ">
+      <h2 class="fw-bold text-primary">Contact Information</h2>
+      <p class="text-secondary"><span class="text-primary fw-bold">Address:</span> St5, Khusal Boys Hostel, Hostel City, Park Road</p>
+      <p class="text-secondary"><span class="text-primary fw-bold">Phone:</span> +92344-0580996</p>
+      <p class="text-secondary"><span class="text-primary fw-bold">Email:</span> godrive.gmail.com</p>
+      <br>
+      <br>
+      <div class="social-icons">
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://www.instagram/alsaqqaf_13.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/ahmed-alsakkaf" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+    </div>
+
+
   </div>
-</div>
+</main>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -242,10 +321,22 @@
 
 
 
+
+<!-- Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+
+
   <script src="../js/home.js"></script>
   <script src="../js/validation.js"></script>
+  <script src="../js/contact.js"></script>
 
 </body>
+
 
 
 </html>

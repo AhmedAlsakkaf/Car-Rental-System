@@ -158,6 +158,57 @@ header{
    
 
 
+// for contact us sectoin
+
+.map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.contact-info {
+  background-color: #f8f9fa;
+  padding: 40px 20px;
+}
+.contact-info h2 {
+  margin-bottom: 20px;
+}
+.social-icons a {
+  margin: 0 10px;
+  color: $primary;
+}
+.social-icons a:hover {
+  color: $primary;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// contact message error
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  display: none;
+}
+
 
 //google fonts
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
