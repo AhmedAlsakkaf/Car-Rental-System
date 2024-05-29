@@ -1,15 +1,19 @@
 //custom colors;
 $background-clr: #FDF7ED;
-$shadow: #C6B9A8;
+$shadow: #816538;
 $primary: #342103;
 $secondary: #816538;
 
+$text:$background-clr;
 
+// C6B9A8 the first one
 
+// ac9a80 another color
 
 .body{
   // color: $primary;
   font-family: "Roboto", sans-serif;
+  background-color: white;
 }
 
 
@@ -17,7 +21,7 @@ $secondary: #816538;
 header{
   background-color: $shadow;  
   padding: 50px;
-  border-radius: 25px;
+  // border-radius: 10px;
   
 }
 
@@ -51,10 +55,30 @@ header{
 .form{
   background-color: $shadow;
   padding: 50px;
-  border-radius: 25px;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .container.form, .headerr {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: $secondary;
+  }
 }
 
 
+
+  /* Custom selection color for text */
+  ::selection {
+    background-color: $primary; /* Primary color background */
+  }
+
+  /* Custom styles for select elements */
+  select.form-select option:checked,
+  select.form-select option:hover {
+    background-color: $primary; /* Primary color background */
+  }
 
 
 
@@ -79,9 +103,19 @@ header{
 // For frequenet asked questions.
 
 .faqs{
-  background-color: #C6B9A8;
+  background-color: $secondary;
   padding: 80px;
-  border-radius: 25px;
+  border-radius: 10px;
+}
+
+
+@media (max-width: 768px) {
+  .faqs {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: $secondary;
+  }
 }
 
 

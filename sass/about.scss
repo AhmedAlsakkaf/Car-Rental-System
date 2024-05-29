@@ -1,0 +1,51 @@
+.breadcrumb-custom {
+
+  padding: 100px;
+
+
+  
+}
+
+
+
+.reserve{
+  padding: 200px;
+}
+
+.custom-container {
+  background-image: url('../images/bread.png'); /* Path to your car image */
+  background-size: cover; /* Make sure the image covers the container */
+  background-position: center; /* Center the image */
+}
+
+/* Optional: to ensure breadcrumb items stand out against the background */
+.breadcrumb-custom {
+  border-radius: 0.25rem; /* Optional: rounded corners */
+  opacity: .6;
+}
+
+
+.breadcrumb-item{
+  color: white;
+  font-size: 30px;
+}
+
+
+.breadcrumb-custom2{
+
+}
+
+// temp
+.custom-container2 {
+  background-image: url('../images/bread.png'); /* Path to your car image */
+  background-size: cover; /* Make sure the image covers the container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.bg-shadow {
+  opacity: .9;
+  padding: 3rem; /* Adjust padding as needed */
+}
+
+

@@ -26,12 +26,12 @@
 
 
   <!-- Header  -->
-  <div class="container">
+  <div class="container-fluid headerr">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom bg-shadow">
   
       <div class="col-md-3 mb-2 mb-md-0">
         <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
-          <img src="images/logo.png" width="100" alt="Logo" aria-label="Bootstrap">
+          <img src="images/logo2.png" width="150" alt="Logo" aria-label="Bootstrap">
         </a>
       </div>
       
@@ -42,16 +42,16 @@
         <span></span>
       </div>
   
-      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 fw-bold">
-        <li><a href="#home" class="nav-link px-2 link-secondary">Home</a></li>
-        <li><a href="#" class="nav-link px-2">About</a></li>
-        <li><a href="#" class="nav-link px-2">Vehicle Model</a></li>
-        <li><a href="#" class="nav-link px-2">Our team</a></li>
-        <li><a href="#" class="nav-link px-2">Contact</a></li>
+      <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="#home" class="nav-link px-2 link-primary text-white">Home</a></li>
+        <li><a href="html/about.html" class="nav-link px-2 text-white">About</a></li>
+        <li><a href="html/cars.html" class="nav-link px-2 text-white">Vehicle Model</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Our team</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">Contact</a></li>
       </ul>
   
       <div class="col-md-3 text-end small-menu">
-        <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='html/login.html'">Login</button>
+        <button type="button" class="btn btn-outline-primary text-white me-2" onclick="location.href='html/login.html'">Login</button>
         <button type="button" class="btn btn-primary" onclick="location.href='html/signup.html'">Signup</button>
       </div>
     </header>
@@ -86,12 +86,12 @@
 
 
   <!-- Reservation Section -->
-  <div class="container form mt-5 ">
+  <div class="container form mt-5">
     <form action="">
-      <h1 class="fw-bold text-primary mb-4">Book a Car</h1>
+      <h1 class="fw-bold text-white mb-4">Book a Car</h1>
       <div class="row mb-3">
         <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
-          <h5 class="d-flex align-items-center text-primary"><i class="fas fa-car text-primary me-2"></i>Select Your Car Type</h5>
+          <h5 class="d-flex align-items-center text-white"><i class="fas fa-car text-primary me-2"></i>Select Your Car Type</h5>
           <select name="cars" id="cars" class="form-select">
             <option value="suzuki">Suzuki</option>
             <option value="honda">Honda</option>
@@ -101,17 +101,17 @@
           </select>
         </div>
         <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
-          <h5 class="d-flex align-items-center text-primary"><i class="fas fa-calendar-alt text-primary me-2"></i>Drop off date</h5>
+          <h5 class="d-flex align-items-center text-white"><i class="fas fa-calendar-alt text-primary me-2"></i>Drop off date</h5>
           <input type="date" id="drop-off" name="drop-off" class="form-control">
         </div>
         <div class="col-lg-4 col-sm-12">
-          <h5 class="d-flex align-items-center text-primary"><i class="fas fa-calendar-alt text-primary me-2"></i>Pick up date</h5>
+          <h5 class="d-flex align-items-center text-white"><i class="fas fa-calendar-alt text-primary me-2"></i>Pick up date</h5>
           <input type="date" id="pick-up" name="pick-up" class="form-control">
         </div>
       </div>
       <div class="row mb-3">
         <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
-          <h5 class="d-flex align-items-center text-primary"><i class="fas fa-map-marker-alt text-primary me-2"></i>Pick up location</h5>
+          <h5 class="d-flex align-items-center text-white"><i class="fas fa-map-marker-alt text-primary me-2"></i>Pick up location</h5>
           <select name="pick-up-location" id="pick-up-location" class="form-select">
             <option value="karachi">Karachi</option>
             <option value="lahore">Lahore</option>
@@ -121,7 +121,7 @@
           </select>
         </div>
         <div class="col-lg-4 col-sm-12 mb-3 mb-lg-0">
-          <h5 class="d-flex align-items-center text-primary"><i class="fas fa-map-marker-alt text-primary me-2"></i>Drop off location</h5>
+          <h5 class="d-flex align-items-center text-white"><i class="fas fa-map-marker-alt text-primary me-2"></i>Drop off location</h5>
           <select name="drop-off-location" id="drop-off-location" class="form-select">
             <option value="karachi">Karachi</option>
             <option value="lahore">Lahore</option>
@@ -136,8 +136,9 @@
       </div>
     </form>
   </div>
+  
 
-
+  
 
 
 
@@ -244,14 +245,36 @@
 
   <div class="container faqs">
 
-    <h1 class="text-center fw-bold text-primary" >Frequent Asked Questions</h1>
-    <p class="text-center text-secondary">Here are the most five frequent asked questions about renting a car from <strong>GoDrive.</strong> <br>
+    <p class="text-center text-primary fw-bold mb-2">FAQs</p>
+    <h1 class="text-center fw-bold text-white texw" >Frequent Asked Questions</h1>
+    <p class="text-center text-white">Here are the most five frequent asked questions about renting a car from <strong>GoDrive.</strong> <br>
       Feel Free to reach us in case if you have more queries.
     </p>
     <br>
     <br>
 
     <div class="accordion" id="accordionExample">
+
+
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            What do I need to rent a car?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body text-secondary">
+            <li>A valid driver's license, usually held for at least one year. </li> 
+            <li>A credit card in the renter's name for the deposit and rental charges. </li> 
+            <li>Proof of identity, such as a passport or a second form of ID, depending on the rental company's policies. </li> 
+            <li>Minimum age requirement, often 21 or 25 years old, depending on the rental company and location. Additional fees may apply for drivers under 25.</li>
+          </div>
+        </div>
+      </div>
+
+
+
 
 
       <div class="accordion-item">
@@ -292,25 +315,6 @@
           </div>
         </div>
       </div>
-
-
-      <div class="accordion-item">
-        <h2 class="accordion-header">
-          <button class="accordion-button text-primary fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            What do I need to rent a car?
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-          <div class="accordion-body text-secondary">
-            <li>A valid driver's license, usually held for at least one year. </li> 
-            <li>A credit card in the renter's name for the deposit and rental charges. </li> 
-            <li>Proof of identity, such as a passport or a second form of ID, depending on the rental company's policies. </li> 
-            <li>Minimum age requirement, often 21 or 25 years old, depending on the rental company and location. Additional fees may apply for drivers under 25.</li>
-          </div>
-        </div>
-      </div>
-
-
 
 
 
